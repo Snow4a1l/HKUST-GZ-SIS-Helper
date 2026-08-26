@@ -1,0 +1,12 @@
+.env
+config.yaml
+.private/
+.venv/
+.venv-build/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+var/
+build/
+dist/
+*.spec

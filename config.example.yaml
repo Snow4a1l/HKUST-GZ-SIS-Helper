@@ -1,0 +1,34 @@
+# Replace this example with your actual future target before using Start.
+target_datetime: "2026-09-01T15:30:00+08:00"
+timezone: "Asia/Shanghai"
+
+sis_url: "https://sisn.hkust-gz.edu.cn/"
+# Verified path only. The session-like query string seen in the browser is not stored.
+shopping_cart_url: "https://sisn.hkust-gz.edu.cn/student/student-my-cart"
+
+browser_channel: "msedge"
+user_data_dir: ".private/browser-profile"
+
+# Verified from the live Shopping Cart DOM on 2026-08-26/27.
+enroll_button_selector: "button.btn-cart-enrol"
+select_all_checkbox_selector: 'div.mine-select input.el-checkbox__original[type="checkbox"][value="Select All"]'
+select_all_click_target_selector: 'div.mine-select label.el-checkbox:has(input.el-checkbox__original[type="checkbox"][value="Select All"])'
+expected_button_texts:
+  - "Enrol"
+  - "Enroll"
+
+enable_pre_refresh: true
+refresh_before_seconds: 2
+manual_login_timeout_seconds: 1800
+keep_browser_open_after_run: true
+require_arm_phrase_confirmation: false
+
+# A second click is intentionally unsupported until its real DOM is supplied.
+click_confirmation_button: false
+confirmation_button_selector: ""
+
+screenshot_dir: "var/screenshots"
+log_file: "var/enroll-click.log"
+lock_file: ".private/enroll-click.lock"
+
+# The script never bypasses CAPTCHA, MFA, queues, rate limits, or access controls.
