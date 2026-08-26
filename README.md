@@ -1,4 +1,4 @@
-# HKUST(GZ) SIS Shopping Cart 定时助手
+# HKUST(GZ) SIS 选课助手
 
 一个面向个人账号的 Windows + Python 选课辅助工具。用户手动完成登录和二次验证后，程序等待指定时间，必要时自动勾选 `Select All`，然后只尝试点击一次 `Enrol`。
 
